@@ -110,6 +110,9 @@
   color: rgba(0, 0, 0, 0.6);
   font-weight: 80;
 }
+.kir{
+  background-color: red !important;
+}
 .icons img{
   transition: all 0.2s ease-in-out;
   opacity: 0.3;

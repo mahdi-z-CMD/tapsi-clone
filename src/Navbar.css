@@ -11,7 +11,7 @@
 .navbar{
     font-family: "dana";
     width: 100%;
-    height: 11vh;
+    height: 20%;
     display: flex;
     justify-content: space-around;
     padding: 10px;
