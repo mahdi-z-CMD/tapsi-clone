@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tapsi-clone/static/css/main.3cd3706f.css",
-    "main.js": "/tapsi-clone/static/js/main.3c930686.js",
+    "main.css": "/tapsi-clone/static/css/main.bc1d1b32.css",
+    "main.js": "/tapsi-clone/static/js/main.763e6530.js",
     "static/js/787.f7e514cc.chunk.js": "/tapsi-clone/static/js/787.f7e514cc.chunk.js",
     "static/media/FontsFree-Net-ir_sans.ttf": "/tapsi-clone/static/media/FontsFree-Net-ir_sans.b405362106aecf6bb79b.ttf",
     "index.html": "/tapsi-clone/index.html",
-    "main.3cd3706f.css.map": "/tapsi-clone/static/css/main.3cd3706f.css.map",
-    "main.3c930686.js.map": "/tapsi-clone/static/js/main.3c930686.js.map",
+    "main.bc1d1b32.css.map": "/tapsi-clone/static/css/main.bc1d1b32.css.map",
+    "main.763e6530.js.map": "/tapsi-clone/static/js/main.763e6530.js.map",
     "787.f7e514cc.chunk.js.map": "/tapsi-clone/static/js/787.f7e514cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3cd3706f.css",
-    "static/js/main.3c930686.js"
+    "static/css/main.bc1d1b32.css",
+    "static/js/main.763e6530.js"
   ]
 }
