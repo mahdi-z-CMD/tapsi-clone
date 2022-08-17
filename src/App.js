@@ -1,7 +1,7 @@
 import './App.css';
-import React,{useState} from 'react'
+import React,{useState , useEffect} from 'react'
 import Navbar from './Navbar';
-
+import { ArrowBack } from 'react-ionicons'
 function App() {
   const data = [
     {
@@ -58,7 +58,7 @@ function App() {
     return(
       <>
       <div className="icons" onClick={x}>
-            <img className={props.class} src={props.img} alt={props.imgname} id="imgalt"/>
+            <img className={props.classs} src={props.img} alt={props.imgname}/>
             <h1>{props.name}</h1>
         </div>
       </>
@@ -66,7 +66,7 @@ function App() {
   }
   const x = (e) =>{
     let alt = e.target.alt
-    if (alt == "classic") {
+    if (alt == "classic"){
       settype(data[0])
       setavali(true)
       setdovomi(false)
@@ -148,6 +148,7 @@ function App() {
       sethashtomi(true)
     }
   }
+
   return (
     <>
     <Navbar />
@@ -175,14 +176,14 @@ function App() {
         <h1>سرویس‌های تپسی</h1>
       </div>
         <div className="serv-icons">
-          <Icons name="تپسی کلاسیک" img="https://tapsi.ir/images/home/cc-classic.png" imgname="classic" class={avali?"active-icon":null}/>
-          <Icons name="تپسی تلفنی" img="https://tapsi.ir/images/home/cc-tel.png" imgname="tel" class={dovomi?"active-icon":null}/>
-          <Icons name="تپسی لاین" img="https://tapsi.ir/images/home/cc-line.png" imgname="line" class={sevomi?"active-icon":null}/>
-          <Icons name="موتوپیک" img="https://tapsi.ir/images/home/cc-motopeyk.png" imgname="moto" class={charomi?"active-icon":null}/>
-          <Icons name="اتوپیک" img="https://tapsi.ir/images/home/cc-autopeyk.png" imgname="auto" class={panjomi?"active-icon":null}/>
-          <Icons name="تپسی پلاس" img="https://tapsi.ir/images/home/cc-plus.png" imgname="plus" class={shishomi?"active-icon":null}/>
-          <Icons name="تاکسی" img="https://tapsi.ir/images/home/cc-taxi.png" imgname="taxi" class={haftomi?"active-icon":null}/>
-          <Icons name="همیار" img="https://tapsi.ir/images/home/cc-hamyar.png" imgname="ham" class={hashtomi?"active-icon":null}/>
+          <Icons name="تپسی کلاسیک" img="https://tapsi.ir/images/home/cc-classic.png" imgname="classic" classs={avali?"active-icon":null}/>
+          <Icons name="تپسی تلفنی" img="https://tapsi.ir/images/home/cc-tel.png" imgname="tel" classs={dovomi?"active-icon":null}/>
+          <Icons name="تپسی لاین" img="https://tapsi.ir/images/home/cc-line.png" imgname="line" classs={sevomi?"active-icon":null}/>
+          <Icons name="موتوپیک" img="https://tapsi.ir/images/home/cc-motopeyk.png" imgname="moto" classs={charomi?"active-icon":null}/>
+          <Icons name="اتوپیک" img="https://tapsi.ir/images/home/cc-autopeyk.png" imgname="auto" classs={panjomi?"active-icon":null}/>
+          <Icons name="تپسی پلاس" img="https://tapsi.ir/images/home/cc-plus.png" imgname="plus" classs={shishomi?"active-icon":null}/>
+          <Icons name="تاکسی" img="https://tapsi.ir/images/home/cc-taxi.png" imgname="taxi" classs={haftomi?"active-icon":null}/>
+          <Icons name="همیار" img="https://tapsi.ir/images/home/cc-hamyar.png" imgname="ham" classs={hashtomi?"active-icon":null}/>
         </div>
       <div className="serv-des">
         <img src={type.img} alt="classic" />
@@ -193,7 +194,32 @@ function App() {
           </p>
         </div>
       </div>
+    <div className="vizheh">
+      <img src="https://tapsi.ir/images/home/i-mac.png" alt="i-mac" />
+      <div className="vizhe-text">
+        <h1>خدمات تپسی ویژه کسب‌وکارها</h1>
+        <p>پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و ارسال کالاهای خود را به سادگی مدیریت کنید.</p>
+        <div className="etelaat-bo">
+          <p className='etelaat'> <ArrowBack className="icon"
+          color={'#ff5722'}
+          height="20px"
+          width="20px"
+          /> اطلاعات بیشتر سرویس سازمانی</p>
+        </div>
+        <button className='login-vizheh'>ورود و ثبت نام پنل سازمانی</button>
+      </div>
     </div>
+    <div className="kharid-etebar">
+      <div className="kharid-text">
+        <h1>خرید کد اعتبار تپسی</h1>
+        <p>کاربران، کسب‌وکارها و سازمان‌ها می‌توانند به تعداد و مبلغ مورد نظرشان، کد اعتبار یا کد تخفیف تپسی تهیه کرده، برای خود، پرسنل و یا مشتریانشان استفاده کنند و از تخفیف‌های ویژه تپسی نیز بهره‌مند شوند.
+این کدها امکان سفارشی‌سازی بر اساس مبدا، مقصد، زمان، درصد و مبلغ را دارند.</p>
+      <button className='login-vizheh'>خرید کد اعتبار و تخفیف</button>
+      </div>
+      <img src="https://tapsi.ir/images/home/macbook.png" alt="macbook" />
+    </div>
+    </div>
+    <div className="test"></div>
     </>
   );
 }
