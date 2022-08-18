@@ -80,13 +80,13 @@
 .serv{
   width: 100%;
   height: 100vh;
-  padding-right: 8%;
-  padding-left: 8%;
 }
 .serv-head{
   text-align: right;
   color: rgba(0, 0, 0, 0.9);
   font-weight: 80;
+  padding-right: 8%;
+  padding-left: 8%;
 }
 .serv-icons{
   margin-top: 40px;
@@ -94,6 +94,8 @@
   justify-content: space-between;
   flex-direction: row-reverse;
   text-align: right;
+  padding-right: 8%;
+  padding-left: 8%;
 }
 .icons{
   display: flex;
@@ -126,6 +128,8 @@
 .serv-des{
   display: flex;
   margin-top: 40px;
+  padding-right: 8%;
+  padding-left: 8%;
 }
 .des-head{
   display: flex;
@@ -135,6 +139,7 @@
   justify-content: flex-start;
   width: 40%;
   margin-left: auto;
+  
 }
 .serv-des img{
   margin-top: 2%;
@@ -158,8 +163,8 @@
   height: 50vh;
   justify-content: center;
   align-items: flex-start;
-  padding-right: 1%;
-  padding-left: 1%;
+  padding-right: 8%;
+  padding-left: 8%;
 }
 .vizheh img{
   width: 500px;
@@ -213,6 +218,8 @@
   margin-bottom: auto;
 }
 .kharid-etebar{
+  padding-right: 8%;
+  padding-left: 8%;
   margin-top: 20%;
   width: 100%;
   height: 60vh;
@@ -239,6 +246,76 @@
   margin-top: 20px;
   color: rgba(0, 0, 0, 0.9);
   font-weight: 80;
+}
+.test{
+  height: 100vh;
+}
+.emkanat{
+  width: 100%;
+  height: 25vh;
+  background-image: url(https://tapsi.ir/images/parallax.jpeg?4cbeb3626ae23a422ff68f732cc4a393);
+  background-attachment: fixed !important;
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  align-items: center;
+  background-size: cover;
+  
+}
+.emkanat ul{
+  display: flex !important;
+  list-style: none;
+  justify-content: space-around !important;
+  align-items: center;
+}
+.emkanat ul li{
+  margin-right: 30px;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 115%;
+}
+.emkanat ul li:not(:last-child){
+  border-right: 2px solid white;
+  padding-right: 15px;
+}
+.sub1 , .sub2 , .sub3 , .sub4{
+  transition: all 0.3s ease-in-out;
+  display: none;
+  font-size: 75%;
+  width: 50%;
+  text-align: right;
+  margin-top: 5px;
+}
+.sub1-m:hover .sub1{
+  display: block;
+  transition: all 0.2s ease-in-out;
+  animation-name: text-blur;
+  animation-duration: 0.5s;
+}
+.sub2-m:hover .sub2{
+  display: block;
+  transition: all 0.2s ease-in-out;
+  animation-name: text-blur;
+  animation-duration: 0.5s;
+}
+.sub3-m:hover .sub3{
+  display: block;
+  transition: all 0.2s ease-in-out;
+  animation-name: text-blur;
+  animation-duration: 0.5s;
+}
+.sub4-m:hover .sub4{
+  display: block;
+  transition: all 0.2s ease-in-out;
+  animation-name: text-blur;
+  animation-duration: 0.5s;
+}
+@keyframes text-blur {
+  from {filter: blur(5px);}
+  to {filter: blur(0px);}
 }
 @media only screen and (max-width: 1159px) {
   .icons{
@@ -419,10 +496,32 @@
     width: 100%;
     font-size: 80%;
   }
+  .emkanat{
+    margin-top: 14%;
+    height: 55vh;
+  }
+  .emkanat ul{
+    display: flex !important;
+    list-style: none;
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .emkanat ul li{
+    border-right: none !important;
+    margin-top: 35px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3) !important;
+    padding-bottom: 2px;
+  }
 }
 @media only screen and (max-width: 590px) {
   .kharid-etebar img{
     width: 330px;
     height: 220px;
+  }
+  .emkanat ul li{
+    font-size: 100%;
+  }
+  .sub1 , .sub2 , .sub3 , .sub4{
+    font-size: 70%;
   }
 }

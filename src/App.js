@@ -218,8 +218,24 @@ function App() {
       </div>
       <img src="https://tapsi.ir/images/home/macbook.png" alt="macbook" />
     </div>
+    <div className="emkanat">
+      <ul>
+        <li className="sub1-m">امکانات هوشمند
+          <p className='sub1'>سهولت استفاده از اپلیکیشن با پیشنهاد مبدا و مقصد سفر، مقاصد منتخب و پیشنهادهای ویژه شما</p>
+        </li>
+        <li className='sub2-m'>دسترس‌پذیری برای توان‌یابان
+          <p className='sub2'>امکان استفاده کاربران نابینا و ناشنوا از اپلیکیشن تپسی و عدم کسر کمیسیون از سفر مسافران ویلچردار</p>
+        </li>
+        <li className="sub3-m">درخواست تلفنی
+          <p className="sub3">امکان درخواست خودرو بدون نیاز به اینترنت و اپلیکیشن، از طریق تماس با شماره ۱۶۳۰</p>
+        </li>
+        <li className='sub4-m'>امکانات هوشمند
+          <p className='sub4'>امکانات ویژه امنیت سفر، شامل اشتراک سفر و پشتیبانی ۲۴ ساعته تیم متخصصین امنیت تپسی</p>
+        </li>
+      </ul>
     </div>
     <div className="test"></div>
+    </div>
     </>
   );
 }
