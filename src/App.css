@@ -504,14 +504,16 @@
     display: flex !important;
     list-style: none;
     flex-direction: column;
+    justify-content: center;
     align-items: center !important;
   }
   .emkanat ul li{
     border-right: none !important;
     margin-top: 35px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3) !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
     padding-bottom: 2px;
   }
+  
 }
 @media only screen and (max-width: 590px) {
   .kharid-etebar img{
